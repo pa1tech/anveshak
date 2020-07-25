@@ -1,7 +1,7 @@
 ## Running servo motor with STM32
 
 *  Servo runs at 20ms(50Hz) with '0' position having 1ms HIGH and '180' position having 2ms HIGH
-https://www.microcontroller-project.com/interfacing-servo-motor-with-stm32.html
+(https://www.microcontroller-project.com/interfacing-servo-motor-with-stm32.html)
 *  We have to change the pwm frequency of stm using the command `timer.setPeriod(20000)` (20000us)
 * ```c
     HardwareTimer timer(3);
