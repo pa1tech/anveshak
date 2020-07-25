@@ -1,5 +1,4 @@
 ## Remapping udev rules to something intuitive
-
 Reference: https://unix.stackexchange.com/questions/66901/how-to-bind-usb-device-under-a-static-name
  ### Commands
 * `lsusb` gives the info of USB device as XXXX:YYYY where XXXX is vendor_id and YYYY is product_id 
@@ -13,8 +12,9 @@ Reference: https://unix.stackexchange.com/questions/66901/how-to-bind-usb-device
   * `lsusb -v -d XXXX:YYYY` or
   * `udevadm info -a -p  $(udevadm info -q path -n /dev/ttyUSB0)`
 
-## Binding a dev-name to a particular physical USB port 
 ***
+
+## Binding a dev-name to a particular physical USB port 
 A particular physical port is linked to a desired dev-name
 Reference: https://superuser.com/a/536648
  ### Commands
