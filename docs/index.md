@@ -7,9 +7,9 @@
 
 ## Gen Documentation / Learning Resources
 * [SSH Tutorial](https://www.nsc.liu.se/systems/ssh-tutorial.pdf)
-* [Gstreamer MUXing](https://pa1tech.github.io/anveshak/self/GstFrames/)
-* [Bluepill bootoading](https://pa1tech.github.io/anveshak/self/bootloadSTM32/)
-* [Comms Learning](https://pa1tech.github.io/anveshak/self/comms/)
-* [ROS Robot Upstart](https://pa1tech.github.io/anveshak/self/robot_upstart/)
-* [Servo motor with Bluepill](https://pa1tech.github.io/anveshak/self/servoSTM32/)
-* [UDEV rules](https://pa1tech.github.io/anveshak/self/udev_rules/)
+* [Gstreamer MUXing](https://pa1tech.github.io/anveshak/self/GstFrames)
+* [Bluepill bootoading](https://pa1tech.github.io/anveshak/self/bootloadSTM32)
+* [Comms Learning](https://pa1tech.github.io/anveshak/self/comms)
+* [ROS Robot Upstart](https://pa1tech.github.io/anveshak/self/robot_upstart)
+* [Servo motor with Bluepill](https://pa1tech.github.io/anveshak/self/servoSTM32)
+* [UDEV rules](https://pa1tech.github.io/anveshak/self/udev_rules)

@@ -1,9 +1,8 @@
 # All-about-Robot_Upstart-[ROS]
-***
+
 Assists with creating simple platform-specific jobs to start your robot’s ROS launch files when its PC powers up.
 
 [ROS documentation](http://docs.ros.org/jade/api/robot_upstart/html/)
-
 
 ## Command Line Usage
 
@@ -16,8 +15,6 @@ Additional arguments like ROS master URI can also be given - [check here](http:/
 * Uninstall command
 
 `rosrun robot_upstart uninstall myrobot`
-
-
 
 ## [Python API](http://docs.ros.org/jade/api/robot_upstart/html/jobs.html) example
 

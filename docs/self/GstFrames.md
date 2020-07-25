@@ -1,5 +1,5 @@
-#GStreamer Combining Frames
-***
+# GStreamer Combining Frames
+
 ## Using `videomixer` plugin to combine multiple feeds
 * Video mixer helps us to combine multiple frames into a single frame, which can be encoded and transmitted via UDP
 * Example transmission:
