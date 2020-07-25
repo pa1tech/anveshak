@@ -1,0 +1,174 @@
+<html>
+	<head>
+		<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-1.11.2.min.js' ) }}"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='js/underscore-min.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='js/backbone-min.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='js/joystick_view.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='js/roslib.min.js' ) }}"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='js/eventemitter2.min.js' ) }}"></script>	
+		<script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js' ) }}"></script>
+		<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+
+		<title>Anveshak</title>  
+
+		<script type="text/javascript" type="text/javascript">
+			// Connecting to ROS
+			// -----------------
+		  
+			var ros = new ROSLIB.Ros({
+			  url : 'ws://localhost:9090'
+			});
+		  
+			ros.on('connection', function() {
+			  console.log('Connected to websocket server.');
+			});
+		  
+			ros.on('error', function(error) {
+			  console.log('Error connecting to websocket server: ', error);
+			});
+		  
+			ros.on('close', function() {
+			  console.log('Connection to websocket server closed.');
+			});
+
+		  </script>
+	</head>
+	
+	<body style="background-color:#ef9051">
+
+		<script type="text/html" id="joystick-view">
+			<canvas id="joystickCanvas" width="<%= squareSize %>" height="<%= squareSize %>" style="width: <%= squareSize %>px; height: <%= squareSize %>px;">
+			</canvas>
+		</script>
+
+		<img src="{{ url_for('static', filename='abc.png') }}" alt="anveshak">
+
+		<div class="row" style="margin-top: 6vh">
+			<div class="col-sm-5"></div>
+			<div class="col-sm-7" id="joystickContent"></div>
+		</div>
+		
+		<div class="row">
+				<div class="col-sm-4"></div>
+
+				<div class="col-sm-3">
+						<button onclick="reset()">Reset</button>
+						<br>
+						<button onclick="hb()">Brake</button>
+						<br>
+						<button onclick="idle()">Idle</button>
+				</div>
+				
+				<div class="col-sm-2">
+						X: <span id="xVal"></span><br/>
+						Y: <span id="yVal"></span><br/>
+						Brake: <span id="hb"></span><br/>
+						State: <span id="state"></span><br/>
+				</div>
+
+				<div class="col-sm-3"></div>
+		</div>
+		
+
+		<script type="text/javascript">
+
+				$(document).ready(function(){
+					var joystickView = new JoystickView(150, function(callbackView){
+						$("#joystickContent").append(callbackView.render().el);
+
+
+						setTimeout(function(){
+							callbackView.renderSprite();
+						}, 0);
+					});
+					
+					joystickView.bind("verticalMove", function(y){
+						$("#yVal").html(y);
+					});
+					joystickView.bind("horizontalMove", function(x){
+						$("#xVal").html(x);
+					});
+					
+					reset();
+					setInterval(fetchdata,100);
+				});
+
+				
+				function reset(){
+					document.getElementById('xVal').innerHTML = 0;
+					document.getElementById('yVal').innerHTML = 0;
+					document.getElementById('hb').innerHTML = 0;
+					document.getElementById('state').innerHTML = 1;
+				}
+				
+				function hb(){
+					document.getElementById('hb').innerHTML = 1;
+				}
+
+				function idle(){
+					var i = document.getElementById('state').innerHTML;
+
+					if(i==1){
+						document.getElementById('state').innerHTML = 0;
+					}
+					if(i==0){
+						document.getElementById('state').innerHTML = 1;
+					}
+				}
+				
+				function fetchdata(){
+				
+					if(document.getElementById('state').innerHTML == 1){
+						var g = document.getElementById('xVal').innerHTML;
+						var d = document.getElementById('yVal').innerHTML;
+						var m = document.getElementById('hb').innerHTML;
+
+						var cmdVel = new ROSLIB.Topic({
+							ros : ros,
+							name : '/motion',
+							messageType : 'traversal/WheelRpm'
+							});
+						
+							var twist = new ROSLIB.Message({
+								vel : parseInt(20*g) ,
+								omega : parseInt(20*d) ,
+								hb : Boolean(m==1)
+							});
+							cmdVel.publish(twist);
+					}
+
+				}
+
+			
+		</script>
+
+		<style>
+			button{
+				margin-top: 1vh;
+				margin-bottom: 1vh;
+				width: 6vw;
+			}
+
+			img{
+				margin-top: 1vh;
+				width: 25%;
+				height: auto;
+				margin-left: 37.5%;
+				margin-right: 37.5%;
+				background-color: white;
+				border-radius: 8%;
+			}
+
+			body{
+				overflow: hidden;
+				font-size: 2em;
+  				font-family: "Comic Sans MS", cursive, sans-serif;
+			}
+		</style>
+	
+	</body>
+</html>
+
+
