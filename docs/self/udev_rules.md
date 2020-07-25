@@ -1,6 +1,6 @@
 ## Remapping udev rules to something intuitive
 
-Reference: (https://unix.stackexchange.com/questions/66901/how-to-bind-usb-device-under-a-static-name)
+Reference: <https://unix.stackexchange.com/questions/66901/how-to-bind-usb-device-under-a-static-name>
  ### Commands
 * `lsusb` gives the info of USB device as XXXX:YYYY where XXXX is vendor_id and YYYY is product_id 
 * Edit `/etc/udev/rules.d/10-local.rules` as
