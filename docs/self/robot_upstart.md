@@ -23,5 +23,6 @@ import robot_upstart
 j = robot_upstart.Job(master_uri='0.0.0.0:11311') 	# to set master_uri  
 j.add(package="/path_to_ros-package_folder", filename="launch/file.launch")
 j.install()
-#j.unistall()	# to unistall the setup ```
+#j.unistall()	# to unistall the setup
+```
 
