@@ -1,5 +1,5 @@
 ---
-title: Bluepill bootoading
+title: Bluepill bootloading
 navigation: 2
 
 ---
