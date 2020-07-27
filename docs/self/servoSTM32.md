@@ -1,3 +1,8 @@
+---
+title: Servo motor with Bluepill
+navigation: 6
+
+---
 ## Running servo motor with STM32
 
 *  Servo runs at 20ms(50Hz) with '0' position having 1ms HIGH and '180' position having 2ms HIGH

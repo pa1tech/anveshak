@@ -1,3 +1,8 @@
+---
+title: ROS Robot Upstart
+navigation: 5
+
+---
 # All-about-Robot_Upstart-[ROS]
 
 Assists with creating simple platform-specific jobs to start your robot’s ROS launch files when its PC powers up.

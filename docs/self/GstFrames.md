@@ -1,3 +1,8 @@
+---
+title: Gstreamer MUXing
+navigation: 4
+
+---
 # GStreamer Combining Frames
 
 ## Using `videomixer` plugin to combine multiple feeds

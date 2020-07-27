@@ -1,3 +1,8 @@
+---
+title: UDEV rules
+navigation: 7
+
+---
 ## Remapping udev rules to something intuitive
 
 Reference: <https://unix.stackexchange.com/questions/66901/how-to-bind-usb-device-under-a-static-name>
