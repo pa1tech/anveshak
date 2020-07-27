@@ -1,8 +1,3 @@
----
-remote_theme: alexander-heimbuch/millidocs
-
----
-
 ## Fun Projects
 * [Remote Kill Switch](https://github.com/pa1tech/anveshak/tree/master/flask_kill) - Web based kill switch of the rover over WiFi
 * [Ajax Web-joystick](https://github.com/pa1tech/anveshak/tree/master/joy_gui_ajax) - Web joystick using ajax queries
