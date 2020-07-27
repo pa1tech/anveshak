@@ -19,7 +19,6 @@ navigation: 2
     RX - PA9 || TX - PA10 and power pins
 * Connect the serial converter to your computer and run the command `stm32flash /dev/ttyUSB0` to check if the STM is detected, if not reset the STM and try again 
 * Once STM is initialized, navigate to the folder conatining the binary file and run
-
    `stm32flash -v -w ./generic_boot20_pc13.bin /dev/ttyUSB0`
 * Change the boot pins to default configuartion
 
