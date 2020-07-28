@@ -12,8 +12,3 @@ build: clean
 
 server: clean
 	@bundle exec jekyll server --livereload
-
-theme:
-	@gem uninstall jekyll-rtd-theme
-	@rm -f *.gem
-	@gem build *.gemspec && gem install *.gem
