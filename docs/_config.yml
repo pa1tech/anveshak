@@ -6,16 +6,11 @@ favicon: favicon.ico
 # theme: jekyll-rtd-theme
 remote_theme: rundocs/jekyll-rtd-theme
 
-edit: true
+edit: false
 
 copyright:
-  revision: true
+  revision: false
 
-addons:
-  - github
-  - gems
-
-addons_commit: true
 
 # sort
 readme_index:

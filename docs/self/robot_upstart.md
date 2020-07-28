@@ -1,6 +1,5 @@
 ---
 title: ROS Robot Upstart
-navigation: 5
 
 ---
 # All-about-Robot_Upstart-[ROS]

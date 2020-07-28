@@ -1,6 +1,5 @@
 ---
 title: UDEV rules
-navigation: 7
 
 ---
 ## Remapping udev rules to something intuitive

@@ -1,6 +1,5 @@
 ---
 title: Bluepill bootloading
-navigation: 2
 
 ---
 ## STM32 Bluepill - Flashing bootloader to enable USB interfacing

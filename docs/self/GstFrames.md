@@ -1,6 +1,5 @@
 ---
 title: Gstreamer MUXing
-navigation: 4
 
 ---
 # GStreamer Combining Frames

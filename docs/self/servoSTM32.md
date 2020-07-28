@@ -1,6 +1,5 @@
 ---
 title: Servo motor with Bluepill
-navigation: 6
 
 ---
 ## Running servo motor with STM32
