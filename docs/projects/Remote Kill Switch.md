@@ -1,4 +1,8 @@
-## Remote kill switch UI using Flask server
+---
+title: Remote Kill Switch
+
+---
+## [Remote kill switch UI using Flask server](https://github.com/pa1tech/anveshak/tree/master/flask_kill)
 ***
 Dependencies:
 * Python: tornado, mongo-python-driver, flask, [flaskcompress](https://github.com/colour-science/flask-compress)

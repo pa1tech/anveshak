@@ -16,8 +16,3 @@
 * [ROS Robot Upstart](https://pa1tech.github.io/anveshak/self/robot_upstart)
 * [Servo motor with Bluepill](https://pa1tech.github.io/anveshak/self/servoSTM32)
 * [UDEV rules](https://pa1tech.github.io/anveshak/self/udev_rules)
-
-## site.pages
-{% for item in site.pages %}
-1. [{{ item.title | default: item.url }}]({{ site.baseurl | append: item.url }})
-{%- endfor %}

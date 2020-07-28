@@ -1,7 +1,10 @@
-## Web Joystick using Flask server and Ajax queries
+---
+title: Ajax Joystick
+
+---
+## [Web Joystick using Flask server and Ajax queries](https://github.com/pa1tech/anveshak/tree/master/joy_gui_ajax)
 ***
-Dependencies:
-* Python: tornado, mongo-python-driver, flask, [flaskcompress](https://github.com/colour-science/flask-compress)
+Python Dependencies: tornado, mongo-python-driver, flask, [flaskcompress](https://github.com/colour-science/flask-compress)
 
 ### Usage
 1. Install Python dependencies
