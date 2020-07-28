@@ -1,3 +1,7 @@
+---
+favicon: favicon.ico
+
+---
 # Anveshak
 ---
 
