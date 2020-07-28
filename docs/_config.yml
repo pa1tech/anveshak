@@ -1,16 +1,20 @@
-title: Anveshak
+title: pa1Tech | Anveshak
 lang: en-US
-description: Some of my fun projects and some docs from Anveshak
-favicon: favicon.ico
+description: Some of my fun projects and docs from Anveshak
+
 
 # theme: jekyll-rtd-theme
 remote_theme: rundocs/jekyll-rtd-theme
 
+favicon: favicon.ico
+
+logo: favicon.ico
+
 edit: false
 
-copyright:
+copyright: 
+  since: false
   revision: false
-
 
 # sort
 readme_index:

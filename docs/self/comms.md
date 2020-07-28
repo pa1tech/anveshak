@@ -1,5 +1,6 @@
 ---
 title: Comms Learning
+permalink: none
 
 ---
 ## Comms Learning Links
