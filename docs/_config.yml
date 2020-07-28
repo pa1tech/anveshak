@@ -1,3 +1,30 @@
-#http://alexander.heimbu.ch/millidocs/
-remote_theme: alexander-heimbuch/millidocs
+title: Anveshak
+lang: en-US
+description: Some of my fun projects and some docs from Anveshak
 favicon: favicon.ico
+
+# theme: jekyll-rtd-theme
+remote_theme: rundocs/jekyll-rtd-theme
+
+edit: true
+
+copyright:
+  revision: true
+
+addons:
+  - github
+  - gems
+
+addons_commit: true
+
+# sort
+readme_index:
+  with_frontmatter: true
+
+sass:
+  style: compressed
+
+exclude:
+  - Makefile
+  - Gemfile
+  - Gemfile.lock
