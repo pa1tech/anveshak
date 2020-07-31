@@ -16,3 +16,7 @@
 * [ROS Robot Upstart](https://pa1tech.github.io/anveshak/self/robot_upstart)
 * [Servo motor with Bluepill](https://pa1tech.github.io/anveshak/self/servoSTM32)
 * [UDEV rules](https://pa1tech.github.io/anveshak/self/udev_rules)
+
+***
+
+[Template](https://rundocs.github.io/jekyll-rtd-theme/docs/installing/remote-theme.html)
